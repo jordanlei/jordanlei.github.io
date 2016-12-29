@@ -18,7 +18,9 @@
 }
 
 .paintings {
-	background-color: rgba(58, 95, 205, 0.5)
+	color: black;
+	background-color: rgba(255, 255, 255, 0.8)
+
 
 }
 
@@ -35,10 +37,21 @@
 }
 
 .header-content h1 {
-    color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 65px;
+}
+
+.carousel-caption{
+	text-shadow: none;
+	margin-bottom: 0px;
+}
+
+.carousel-caption h3 {
+	font-size: 35px;
+	color: rgba(255, 255, 255, 0.7);
+
 }
 
 .header-content h2{
@@ -68,12 +81,17 @@ hr {
 }
 
 .portfolio-image {
-	width: 200px;
+	  width: 200px;
     height: 200px;
 }
 
+.carousel {
+	height: 500px;
+}
+
 .carousel-image {
-  height: 200px;
-	width: auto;
+  min-height: 500px;
+  max-height: 500px;
+
 
 }
