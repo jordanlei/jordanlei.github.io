@@ -1,0 +1,49 @@
+.header-content-inner {
+	text-align: center;
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    position:relative;
+    padding-top: 25%;
+    padding-bottom: 25%;
+
+}
+
+.header-content {
+	background-image: url(../images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.header-content h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* line breaks */
+
+hr.light {
+    border-color: #fff;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
