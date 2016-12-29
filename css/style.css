@@ -10,6 +10,7 @@
 
 }
 
+
 .header-content {
 	background-image: url(../images/background1.jpg);
     background-position: center;
@@ -17,13 +18,19 @@
     min-height: 500px;
 }
 
-.header-content h1 {
-	text-transform: uppercase;
-	font-weight: 700;
+.navbar{
+	background: rgba(0, 0, 0, 0.5);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+.header-content h1 {
+    color: rgba(0, 0, 0, 0.8);
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 65px;
+}
+
+.header-content h2{
+	color: rgba(0, 0, 0, 0.5);
 }
 
 section {
@@ -46,4 +53,9 @@ hr {
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid #eee;
+}
+
+.portfolio-image {
+	width: 200px;
+    height: 200px;
 }
