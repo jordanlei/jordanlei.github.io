@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-fixed-top navbar-dark">
+<nav class="navbar navbar-fixed-top navbar-dark" id:"topnavbar">
   <a class="navbar-brand" href="#">Jordan Lei</a>
   <ul class="nav navbar-nav">
     <li class="nav-item active">
@@ -25,46 +25,61 @@
     <li class="nav-item">
       <a class="nav-link" href="#paintings">Paintings</a>
     </li>
-    <!-- Header
+
     <li class="nav-item">
-      <a class="nav-link" href="stuff.html">Stuff</a>
+      <a class="nav-link" href="art.html">Art</a>
     </li>
-    -->
+
   </ul>
 </nav>
+
+
+
+
 
 
 <div class="header-content">
     <div class="header-content-inner">
             <h1>Jordan Lei</h1>
-                        <h2>Artist</h2>
+                        <h2>Artist. Researcher. Explorer.</h2>
 
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find out more</a>
+            <a href="#about" class="btn btn-outline-secondary btn-xl page-scroll">Find out more</a>
     </div>
 </div>
 
 <!-- About -->
-<section class= "about">
+<section id= "about">
     <div class="container">
         <div class="row">
             <div class="text-sm-center">
                 <h2 class="section-heading">About</h2>
                 <hr class="light">
-                <p class="text-faded"><a href="//google.com">Lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!</p>
-                <a href="#" class="btn btn-default btn-xl">Back To Top</a>
+                <p style="text-xs-left">
+                <img src="images/portfolio-photos/about-face.jpg" class="about-image" style="float: left;" />
+
+                 I'm currently a freshman Jerome Fisher Program in Management and Technology at the University of Pennsylvania,
+                 studying for a dual degree in the Wharton School of Business and the School of Engineering and Applied Sciences.
+                 The experience of living in a multitude of different countries and cultures has given me a multidimensional view of
+                 the world, which I continue to expand and explore every day. This website is a collection of the adventures and experiences
+                 I have taken to understand the world around me with multiple perspectives.
+                </p>
+                <a href="#" class="btn page-scroll">Back To Top</a>
             </div>
+
         </div>
     </div>
 </section>
 
 <!-- Portfolio -->
-<section class="portfolio">
+<section id="portfolio">
     <div class="container">
         <div class="row">
             <div class="text-sm-center">
                 <h2 class="section-heading">Portfolio</h2>
                 <hr class="light">
-                <p class="text-faded"><a href="//google.com">Lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!</p>
+                <p class="text-faded"><a href="//google.com">Lorem</a> ipsum dolor sit a
+                  met, consectetur adipisicing elit. Praesentium similique eos eligendi error
+                 veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!</p>
                 <a href="#" class="btn btn-default btn-xl">Back To Top</a>
             </div>
         </div>
@@ -72,13 +87,15 @@
 </section>
 
 <!-- Paintings -->
-<section class="paintings">
+<section id="paintings">
     <div class="container">
         <div class="row">
             <div class="text-sm-center">
                 <h2 class="section-heading">Paintings</h2>
                 <hr class="light">
-                <p class="text-faded"><a href="//google.com">Lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!</p>
+                <p class="text-faded"><a href="//google.com">Lorem</a> ipsum dolor sit amet, c
+                  onsectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum,
+                  sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!</p>
             </div>
         </div>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -133,5 +150,4 @@ $('.carousel').carousel({
   interval: 2000
 })
 </script>
-
 </html>
