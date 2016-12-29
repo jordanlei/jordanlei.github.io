@@ -7,6 +7,16 @@ body{
 	background: rgba(0, 0, 0, 0.5);
 }
 
+#left-nav{
+	padding-left: 3%;
+	color: black;
+	min-height: 60%;
+	font-size: 20px;
+}
+
+#left-nav a{
+	color: black;
+}
 
 .header-content-inner {
 	text-align: center;
@@ -21,8 +31,8 @@ body{
 }
 
 .header-content {
-	background-image: url(../images/background1.jpg);
-	background-attachment: fixed;
+ background-image: url(../images/background1.jpg);
+ background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -50,13 +60,14 @@ p {
 
 
 #about{
-	padding: 10%;
+	padding-left: 18%;
+	padding-right:18%;
 }
 
 
 
 #about p{
-	min-height: 440px;
+	min-height: 370px;
 }
 
 #about a.btn {
@@ -75,7 +86,16 @@ p {
 
 
 #portfolio{
-	padding: 10%;
+	padding-left: 18%;
+	padding-right:18%;
+}
+
+
+
+
+#artwork{
+	padding-left: 18%;
+	padding-right:18%;
 }
 
 .carousel-caption{
@@ -123,12 +143,12 @@ hr {
 
 
 .carousel {
-	height: 500px;
+	max-height: 500px;
 }
 
 .carousel-image {
-  min-height: 500px;
-  max-height: 500px;
+  max-height:500px;
+	min-height:500px;
 
 
 }
