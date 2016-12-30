@@ -215,3 +215,24 @@ hr {
 	padding-bottom:10px;
 	padding-top:10px;
 }
+
+
+
+
+/* art page */
+.header-content-art{
+	background-image: url(../images/new-york-dark.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+}
+
+
+.header-content-art h1 {
+  color: rgba(255, 255, 255, 0.8);
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 65px;
+}
