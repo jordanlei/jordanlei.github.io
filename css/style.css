@@ -90,14 +90,38 @@ p {
 	padding-right:18%;
 }
 
-
+#portfolio-cmu{
+	padding-left: 18%;
+	padding-right:18%;
+	padding-top: 2%;
+  padding-bottom: 2%;
+	color: white;
+	background-image: url(../images/portfolio-photos/carnegie-mellon.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 
 #artwork{
 	padding-left: 18%;
 	padding-right:18%;
+
 }
 
+#artwork a.btn {
+  color:rgba(255, 255, 255, 0.8);
+	font-size: 20px;
+	min-width: 200px;
+	background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+
+#artwork div.text-sm-center{
+	padding-bottom: 20px;
+}
 .carousel-caption{
 	text-shadow: none;
 	margin-bottom: 0px;
