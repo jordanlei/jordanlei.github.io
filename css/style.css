@@ -19,8 +19,8 @@ body{
 }
 
 .header-content-inner {
-	text-align: center;
-	width: 80%;
+	  text-align: center;
+	  width: 80%;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -36,8 +36,7 @@ body{
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
-
-    min-height: 500px;
+ min-height: 500px;
 }
 
 .header-content h1 {
@@ -90,13 +89,31 @@ p {
 	padding-right:18%;
 }
 
-#portfolio-cmu{
+.portfolio-tab{
 	padding-left: 18%;
 	padding-right:18%;
 	padding-top: 2%;
   padding-bottom: 2%;
 	color: white;
+}
+
+.portfolio-tab a.btn{
+	color:white;
+	font-size:20px;
+	min-width: 100px;
+
+}
+
+#portfolio-cmu{
 	background-image: url(../images/portfolio-photos/carnegie-mellon.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#portfolio-ohsu{
+	background-image: url(../images/portfolio-photos/ohsu.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
