@@ -120,6 +120,14 @@ p {
 	background-size: cover;
 }
 
+#portfolio-senate{
+	background-image: url(../images/portfolio-photos/senate.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 #artwork{
 	padding-left: 18%;
