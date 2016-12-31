@@ -242,6 +242,7 @@ hr {
 }
 
 
+
 /* art page */
 #gallery{
 	padding:18%;
@@ -288,6 +289,53 @@ hr {
 
 #gallery-portrait-man-2{
 	background-image: url(../images/portrait-man-2.jpg);
+}
+
+#gallery-sentinel{
+	background-image: url(../images/sentinel.jpg);
+}
+
+#gallery-mallards{
+	background-image: url(../images/mallards.jpg);
+}
+
+#gallery-cubist-roses{
+	background-image: url(../images/cubist-roses.jpg);
+}
+
+#gallery-abstract-roses{
+	background-image: url(../images/abstract-roses.jpg);
+}
+
+#gallery-still-life{
+	background-image: url(../images/still-life.jpg);
+}
+
+#gallery-guilin{
+	background-image: url(../images/guilin.jpg);
+}
+
+#gallery-new-york{
+	background-image: url(../images/new-york.jpg);
+}
+
+#gallery-chicago{
+	background-image: url(../images/chicago.jpg);
+}
+
+#gallery-hourglass-woman{
+	background-image: url(../images/hourglass-woman.jpg);
+}
+
+#gallery-hourglass-city{
+	background-image: url(../images/hourglass-city.jpg);
+}
+#gallery-time-cathedral{
+	background-image: url(../images/time-cathedral.jpg);
+}
+
+#gallery-born{
+	background-image: url(../images/born.jpg);
 }
 
 .hovereffect {
