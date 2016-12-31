@@ -141,6 +141,10 @@ p {
 
 }
 
+#artwork div.container{
+	padding:0px;
+}
+
 
 #artwork div.text-sm-center{
 	padding-bottom: 20px;
@@ -235,4 +239,27 @@ hr {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 65px;
+}
+
+
+/* art page */
+#gallery{
+	padding:18%;
+}
+
+#gallery div.container{
+	padding:0px;
+}
+
+
+.gallery-container{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+}
+
+#new-york{
+	background-image: url(../images/new-york.jpg);
 }
