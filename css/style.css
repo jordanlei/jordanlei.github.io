@@ -253,13 +253,32 @@ hr {
 
 
 .gallery-container{
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 300px;
 }
 
-#new-york{
-	background-image: url(../images/new-york.jpg);
+#gallery-jordan-portrait{
+	background-image: url(../images/jordan-portrait.jpg);
+}
+
+#gallery-self-portrait{
+	background-image: url(../images/self-portrait.jpg);
+}
+
+#gallery-rose{
+	background-image: url(../images/rose.jpg);
+}
+
+#gallery-portrait-man{
+	background-image: url(../images/portrait-man.jpg);
+}
+
+#gallery-portrait-girl{
+	background-image: url(../images/portrait-girl.jpg);
+}
+
+#gallery-portrait-girl-2{
+	background-image: url(../images/portrait-girl-2.jpg);
 }
