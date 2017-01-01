@@ -251,8 +251,13 @@ hr {
  font-size: 20px;
 }
 
+
+a.nav-link{
+	color: rgba(0, 0, 0, 0.5);
+}
+
 a.nav-link.active{
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.9);
 }
 
 
