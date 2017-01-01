@@ -16,7 +16,28 @@
       <li class="nav-item">
         <a class="nav-link" href="index.html#home"> Back To Homepage <span class="sr-only">(current)</span></a>
       </li>
+    </ul>
   </nav>
+
+  <div class="container">
+    <div class="row">
+     <nav class="nav navbar-fixed-bottom col-xs-1 col-xs-1 col-xs-1 navbar-fixed-bottom"
+      id="left-nav">
+     <li class="nav-item">
+      <a class="nav-link" href="#art-home">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#portraits">Portraits</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#nature">Nature</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#time">Time</a>
+     </li>
+   </nav>
+  </div>
+  </div>
 
   <div class="header-content-art" id= "art-home">
       <div class="header-content-inner">
@@ -28,14 +49,15 @@
 
 
 
+
+
   <section id="artwork">
       <div class="container">
           <div class="row">
-              <div class="text-sm-center">
-                  <h2 class="section-heading">Artwork</h2>
+              <div class="text-xs-center">
+                  <h2 class="section-heading">Featured Work</h2>
                   <hr class="light">
                   <p class="text-faded"> </p>
-                  <a href="art.html" class="btn page-scroll">See More <br/></a>
               </div>
           </div>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -131,6 +153,13 @@
 
   <section id="gallery">
     <div class= "container" id= "portraits">
+      <div class="row">
+          <div class="text-xs-center">
+              <h2 class="section-heading">Portraits</h2>
+              <hr class="light">
+              <p class="text-faded"> </p>
+          </div>
+      </div>
     <div class="gallery-container col-xs-4 img-thumbnail img-responsive" id= "gallery-jordan-portrait">
       <div class="hovereffect">
         <div class="row">
@@ -223,7 +252,14 @@
   -->
 
 
-  <div class= "container" id= "nature">
+  <div class= "container" id="nature">
+    <div class="row">
+        <div class="text-xs-center">
+            <h2 class="section-heading">Nature and Still Life</h2>
+            <hr class="light">
+            <p class="text-faded"> </p>
+        </div>
+    </div>
   <div class="gallery-container col-xs-6 img-thumbnail img-responsive" id= "gallery-sentinel">
     <div class="hovereffect">
       <div class="row">
@@ -302,7 +338,14 @@
 <!-- gallery-section-3
 -->
 
-<div class= "container" id= "nature">
+<div class= "container" id= "time">
+  <div class="row">
+      <div class="text-xs-center">
+          <h2 class="section-heading">Time: A Concentration</h2>
+          <hr class="light">
+          <p class="text-faded"> </p>
+      </div>
+  </div>
 <div class="gallery-container img-thumbnail img-responsive" id= "gallery-new-york">
   <div class="hovereffect">
     <div class="row">
@@ -426,6 +469,8 @@ $(document).ready(function(){
         });
    });
 })
+
+$('body').scrollspy({ target: '#left-nav'})
 </script>
 
 
