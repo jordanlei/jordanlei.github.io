@@ -72,6 +72,26 @@ p {
 
 }
 
+#education{
+	padding-left: 18%;
+	padding-right: 18%;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.8);
+
+}
+
+#education h3{
+	padding: 0px;
+}
+
+#education a.btn{
+	color:rgba(255, 255, 255, 0.8);
+	font-size: 20px;
+	min-width: 200px;
+	background-color: rgba(0, 0, 0, 0.9);
+	margin-top: 30px;
+}
+
 
 .about-image {
 	height: 500px;
@@ -80,8 +100,8 @@ p {
 
 
 #portfolio{
-	color: rgba(255, 255, 255, 0.8);
-	background-color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.8);
+	background-color: white;
 	padding-left: 18%;
 	padding-right:18%;
 	padding-bottom:50px;
@@ -252,11 +272,11 @@ hr {
 }
 
 
-a.nav-link{
+#left-nav a.nav-link{
 	color: rgba(0, 0, 0, 0.5);
 }
 
-a.nav-link.active{
+#left-nav a.nav-link.active{
 	color: rgba(0, 0, 0, 0.9);
 }
 
@@ -454,4 +474,55 @@ transition-delay:.2s;
 {
     display: inline-block;
     margin-top: 20px;
+}
+
+
+/* academics */
+#academic-left-nav{
+ padding-left: 3%;
+ color: black;
+ min-height: 60%;
+ font-size: 20px;
+}
+
+#academic-left-nav a.nav-link{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#academic-left-nav a.nav-link.active{
+	color: rgba(255, 255, 255, 0.9);
+}
+
+
+#academics-home{
+	background-image: url(../images/academics/graduation.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#portfolio-speech{
+	background-image: url(../images/academics/speech.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#portfolio-science{
+	background-image: url(../images/academics/science.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#portfolio-swimming{
+	background-image: url(../images/academics/swimming.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
