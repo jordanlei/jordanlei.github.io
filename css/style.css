@@ -251,7 +251,7 @@ hr {
 
 /* art page */
 .header-content-art{
-	background-image: url(../images/new-york-dark.jpg);
+	background-image: url(../images/054.gif);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -306,7 +306,69 @@ hr {
 	padding:0px;
 }
 
+#gallery-realism h4{
+	font-size: 14px;
+}
 
+#gallery-byte-me{
+	background-image: url(../images/byte-me.jpg);
+}
+
+#gallery-freefall{
+	background-image: url(../images/freefall.jpg);
+}
+
+#gallery-hackerman{
+	background-image: url(../images/hackerman.jpg);
+}
+
+#gallery-deserted{
+	background-image: url(../images/deserted.jpg)
+}
+
+#gallery-allegory-of-cave{
+	background-image: url(../images/allegory-of-cave.jpg)
+}
+
+#gallery-eclipse{
+	background-image: url(../images/eclipse.jpg)
+}
+
+#gallery-kingslanding{
+	background-image: url(../images/kingslanding.jpg)
+}
+
+#gallery-elephant-temple{
+	background-image: url(../images/elephant-temple.jpg)
+}
+
+#gallery-elements{
+	background-image: url(../images/elements.jpg)
+}
+
+#gallery-thwaites{
+	background-image: url(../images/thwaites.jpg)
+}
+
+#gallery-man-digital2{
+	background-image: url(../images/man-digital2.jpg)
+}
+
+#gallery-chris-evans{
+	background-image: url(../images/chris-evans.jpg)
+}
+
+#gallery-man-digital{
+	background-image: url(../images/man-digital.jpg)
+}
+
+#gallery-landscape-digital{
+	background-image: url(../images/landscape-digital.jpg)
+}
+
+#gallery-woman-digital{
+	background-image: url(../images/woman-digital.jpg)
+}
 
 #gallery-jordan-portrait{
 	background-image: url(../images/jordan-portrait.jpg);
