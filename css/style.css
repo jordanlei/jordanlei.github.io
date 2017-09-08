@@ -26,7 +26,7 @@ body{
 }
 
 .header-content {
- background-image: url(../images/background1.jpg);
+ background-image: url(../images/freefall-bkg.jpg);
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
@@ -35,10 +35,15 @@ body{
 }
 
 .header-content h1 {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.7);
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 65px;
+}
+
+
+.header-content h2 {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .header-content a.btn {
