@@ -26,7 +26,7 @@ body{
 }
 
 .header-content {
- background-image: url(../images/freefall-bkg.jpg);
+ background-image: url(../images/jordanlei.JPG);
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
@@ -70,8 +70,8 @@ p {
 	min-height: 370px;
 }
 
-#about a.btn {
-  color:rgba(255, 255, 255, 0.8);
+#about-section a.btn {
+  	color:rgba(255, 255, 255, 0.8);
 	font-size: 20px;
 	min-width: 200px;
 	background-color: rgba(0, 0, 0, 0.9);
@@ -121,27 +121,21 @@ p {
 	color: white;
 }
 
-.portfolio-tab a.btn{
-	color:white;
-	font-size:20px;
+#portfolio-section a.btn {
+	color:inherit;
+	border-color: inherit;
+	border-width: medium;
 	min-width: 100px;
-
 }
 
 #portfolio-cmu{
-	background-image: url(../images/portfolio-photos/carnegie-mellon.png);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	display: table;
+	float:right;
+	padding:0;
 }
 
 #portfolio-ohsu{
-	background-image: url(../images/portfolio-photos/ohsu.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	padding:0;
 }
 
 #portfolio-senate{
@@ -159,11 +153,13 @@ p {
 
 }
 
-#artwork a.btn {
-  color:rgba(255, 255, 255, 0.8);
-	font-size: 20px;
-	min-width: 200px;
-	background-color: rgba(0, 0, 0, 0.9);
+#artwork-section a.btn {
+  	color:inherit;
+	border-color: inherit;
+	border-width: medium;
+	font-size:20px;
+	min-width: 100px;
+	
 
 }
 
@@ -241,7 +237,8 @@ hr {
 }
 
 #footer{
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 1.0);
+	color:rgba(170,165,165,0.7);
 	padding-bottom:10px;
 	padding-top:10px;
 }
@@ -597,4 +594,157 @@ transition-delay:.2s;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+
+
+
+#about-home {
+	background-image: url(../images/byte-me.jpg);
+	text-color: white;
+}
+
+.content-container {
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	height:auto;
+	min-height: 500px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.section-title {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align: center;
+	font-size: 1000;
+	text-transform: capitalize;
+}
+
+.section-text {
+	text-align:justify;
+}
+#about-content {
+	background-color:#EAF3FA;
+	color:#33373A;
+}
+
+.section-button {
+	text-align: center;
+}
+
+#about-section {
+	padding: 0;
+}
+
+
+
+#edu-section {
+	padding: 0;
+}
+
+
+#edu-content {
+	background-color:rgba(109,128,141,0.89);
+	background-image: -webkit-linear-gradient(top left, rgba(5,5,4,1.00) 30%, rgba(30,40,40,0.89) 100%);
+	background-image: -o-linear-gradient(top left, rgba(5,5,4,1.00) 30%, rgba(30,40,40,0.89) 100%);
+	background-image: linear-gradient(to bottom, rgba(5,5,4,1.00) 50%, rgba(30,40,40, 0.89) 100%);
+	color:#B5BFC6;
+}
+
+
+
+
+
+
+
+#portfolio-content {
+	background-image: url(../images/portfolio-photos/city.jpg);
+	background-size: cover;
+	padding:0;
+	color: rgba(234,243,250,0.7);
+}
+
+#portfolio-penn {
+	display: flex;
+	padding:0;
+}
+
+
+.about-section {
+	display:flex;
+}
+
+
+#portfolio-penn-content {
+	background-color: rgba(15,20,20,0.8);
+	padding-left: 6%;
+	padding-right: 5%;
+	padding-bottom: 1%;
+}
+
+
+
+#portfolio-cmu-content {
+	float:right;
+	background-color: rgba(15,20,20,0.8);
+	padding: 5%;
+	padding-bottom: 1%;
+}
+
+#portfolio-ohsu-content {
+	background-color: rgba(15,20,20,0.8);
+	padding: 5%;
+	padding-left: 6%;
+	padding-bottom:1%;
+}
+
+#project-content {
+	background-color:rgba(109,128,141,0.89);
+	background-image: linear-gradient(to bottom, rgba(5,5,4,1.00) 50%, rgba(30,40,40,0.89) 100%);
+	color:#B5BFC6;
+}
+
+
+
+
+
+#artwork-content {
+	background-color: aliceblue;
+	background-image: url(../images/city-lovers.JPG);
+	background-size: cover;
+	padding:0;
+}
+
+#artwork-penn {
+	padding:0;
+}
+
+#artwork-penn-content {
+	padding:5%;
+	padding-top:0;
+	padding-left:6%;
+	background-color: rgba(15,20,20,0.7);
+	color: rgba(234,243,250,0.7);
+}
+
+
+#art-is-everywhere {
+	padding: 10;
+}
+
+#contact-content {
+	color:rgba(220,230,230,0.7);
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.footer-social {
+	display: block;
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
 }
