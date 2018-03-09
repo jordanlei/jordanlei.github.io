@@ -661,7 +661,7 @@ transition-delay:.2s;
 
 
 #portfolio-content {
-	background-image: url(../images/portfolio-photos/city.jpg);
+	background-image: url(../images/city.jpg);
 	background-size: cover;
 	padding:0;
 	color: rgba(234,243,250,0.7);
