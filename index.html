@@ -11,17 +11,17 @@
 
 <body data-spy="scroll" data-target="#top-nav">
 <nav class="navbar navbar-fixed-top navbar-dark" id="top-nav">
-  <a class="navbar-brand" href="#home">Jordan Lei</a>
+  <a class="navbar-brand js-scroll-trigger" href="#home">Jordan Lei</a>
   <ul class="nav navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link js-scroll-trigger" href="#home">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#about-section">About</a>
+      <a class="nav-link js-scroll-trigger" href="#about-section">About</a>
     </li>
-	<li class="nav-item"> <a class="nav-link" href="#portfolio-penn">Portfolio</a> </li>
+	<li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#portfolio-penn">Portfolio</a> </li>
     <li class="nav-item">
-      <a class="nav-link" href="#artwork-penn">Artwork</a>
+      <a class="nav-link js-scroll-trigger" href="#artwork-penn">Artwork</a>
     </li>
   </ul>
 
@@ -231,9 +231,13 @@
 </body>
 
 	
-<script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-$('body').scrollspy({ target: '#top-nav'})
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-</script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 </html>
