@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/sketchpadstyle.css"/>
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/blogscript.js"></script>
+  </head>
+
+<body>
+  <nav class="navbar navbar-fixed-top navbar-dark">
+    <a class="navbar-brand" href="sketchpad.html#home">Sketchpad</a>
+
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#home"> Back <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+  </nav>
+
+
+  <div class="header-content-blog blog-home-title" id= "academics-home">
+      <div class="header-content-inner scroll-fadein">
+            <h1>The Sketchpad</h1>
+		  	<h2>A Blog by Jordan Lei</h2>
+      </div>
+  </div>
+
+
+<section class= "blog-post-dark">
+	<article class="blog-post">
+    <div class="content-container col-xs-6 img-responsive" style="background-image: url(blogimages/blackboardbucket.jpg); background-size: 70% 100%; background-position:left;">	  
+    </div>
+	<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once">
+		<div class="content-container col-xs-10 img-responsive">
+		<a href="how-to-engage-with-art.html">
+			<h2 class="section-title"> Featured: <br> How to Engage with Art</h2>
+			<p class="section-text"> A Guide Made for and by an Amateur
+			</p>
+		</a>
+		<p class="section-subtext"> <i> Posted by Jordan Lei on 06.04.2018
+		</i></p>
+		<p class="btn btn-xl">Art</p>
+    	</div>
+	</div>	
+	</article>
+</section>
+	
+	
+<section class= "blog-post-light">
+	<article class="blog-post">
+    <div class="content-container col-xs-6 img-responsive" style="background-image: url(blogimages/starry-night-van-gogh.jpg); background-size: 70% 100%;">	  
+    </div>
+	<div class="content-container col-xs-6 img-responsive scroll-fadein">
+		<div class="content-container col-xs-10 img-responsive">
+		<a href="how-to-engage-with-art.html">
+			<h2 class="section-title"> How to Engage with Art</h2>
+			<p class="section-text"> A Guide Made for and by an Amateur
+			</p>
+		</a>
+			<p class="section-subtext"> <i> Posted by Jordan Lei on 06.04.2018
+			</i></p>
+			<p class="btn btn-xl">Art</p>
+		<hr>
+    	</div>
+	</div>
+	</article>
+</section>
+	
+<section class= "blog-post-light">
+	<article class="blog-post">
+    <div class="content-container col-xs-6 img-responsive" style="background-image: url(blogimages/matthew-jordan-4.jpg); background-size: 70% 100%;">	  
+    </div>
+	<div class="content-container col-xs-6 img-responsive scroll-fadein">
+		<div class="content-container col-xs-10 img-responsive">
+		<a href="on-brotherhood.html">
+			<h2 class="section-title"> On Brotherhood</h2>
+			<p class="section-text"> What Over a Decade of Brotherhood has Taught Me
+			</p>
+		</a>
+		<p class="section-subtext"> <i> Posted by Jordan Lei on 06.01.2018
+		</i></p>
+		<p class="btn btn-xl">Life</p>
+		<p class="btn btn-xl">Opinion</p>
+		<hr>
+    	</div>
+	</div>
+	</article>
+</section>
+	
+
+
+
+
+	
+
+
+  <section id= "footer">
+      <div class="container">
+          <div class="row">
+              <div class="text-xs-center">
+                  <p>
+                    Copyright &copy Jordan Lei 2017
+                  </p>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+
+
+<script>
+$(document).ready(function(){
+   $('li img').on('click',function(){
+        var src = $(this).attr('src');
+        var img = '<img src="' + "images/background1.jpg"+ '" class="img-responsive"/>';
+        $('#myModal').modal();
+        $('#myModal').on('shown.bs.modal', function(){
+            $('#myModal .modal-body').html(img);
+        });
+        $('#myModal').on('hidden.bs.modal', function(){
+            $('#myModal .modal-body').html('');
+        });
+   });
+})
+
+$('body').scrollspy({ target: '#academic-left-nav'})
+</script>
+
+
+</html>
