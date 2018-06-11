@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
    $('li img').on('click',function(){
         var src = $(this).attr('src');
@@ -92,6 +94,7 @@ function check_if_in_view() {
         (element_top_position <= window_bottom_position)){
     	$element.addClass('in-view');
 		$element.addClass(animationname);
+		$element.removeClass('hidden');
 
 		/*	
 			.one(animationend, function() {
@@ -101,6 +104,7 @@ function check_if_in_view() {
     } else {
       $element.removeClass('in-view');
 	  $element.removeClass(animationname);
+	  $element.addClass('hidden');
     }
   });
   };
@@ -128,6 +132,7 @@ function check_if_in_viewonce() {
         (element_top_position <= window_bottom_position)){
     	$element.addClass('in-view');
 		$element.addClass(animationname);
+		$element.removeClass('hidden');
 
 		/*	
 			.one(animationend, function() {
