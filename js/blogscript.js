@@ -30,7 +30,7 @@ $( document ).ready(function() {
 			var $element = $(this);
 			$element.addClass('removed');
 		});
-		alert('mobile!');
+		//alert('mobile!');
     }
 });
 	
