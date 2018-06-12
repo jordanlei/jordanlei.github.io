@@ -16,7 +16,13 @@ $(document).ready(function(){
 
 $('body').scrollspy({target: '#academic-left-nav'});
 
+$( document ).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
+    if (isMobile.matches) {
+        alert('mobile!');
+    }
+});
 	
 var animationend = (function(el) {
   var animations = {
