@@ -56,6 +56,9 @@ var animationname_list= ['animated fadeIn', 'animated fadeInUp'];
 var animation_listone=['.scroll-fadeinup-once', '.scroll-fadein-once'];
 var animationname_listone= ['animated fadeInUp', 'animated fadeIn'];
 
+var animation_listalw=['.scroll-fadeinup-alw', '.scroll-fadein-alw'];
+var animationname_listalw= ['animated fadeInUp', 'animated fadeIn'];
+
 var $window = $(window);
 
 	/**
@@ -68,7 +71,41 @@ for (i=0; i<animation_list.length; i++){
 **/
 
 
+function check_if_in_viewalwaysvisible() {
+  for(i=0; i<animation_listalw.length; i++)
+  {
+  var $animation_elements = $(animation_listalw[i]);	
+  var animationname= animationname_listalw[i];
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+	var elt= this;
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+	  
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)){
+    	$element.addClass('in-view');
+		$element.addClass(animationname);
+		$element.removeClass('hidden');
+
+		/*	
+			.one(animationend, function() {
+			$(this).removeClass(animationname)
+		})
+		*/
+    } else {
+      $element.removeClass('in-view');
+	  $element.removeClass(animationname);
+    }
+  });
+  };
+}
 
 
 
@@ -148,4 +185,5 @@ function check_if_in_viewonce() {
 
 $window.on('scroll', check_if_in_view);
 $window.on('scroll', check_if_in_viewonce);
+$window.on('scroll', check_if_in_viewalwaysvisible);
 $window.trigger('scroll');	
