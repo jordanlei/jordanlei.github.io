@@ -19,8 +19,18 @@ $('body').scrollspy({target: '#academic-left-nav'});
 $( document ).ready(function() {      
     var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-    if (isMobile.matches) {
-        alert('mobile!');
+    if (isMobile.matches) {		
+		var $mobile_elements= $('.mobile-only');
+		$.each($mobile_elements, function() {
+			var $element = $(this);
+			$element.removeClass('removed');
+		});
+		var $desktop_elements= $('.desktop-only');
+		$.each($desktop_elements, function() {
+			var $element = $(this);
+			$element.addClass('removed');
+		});
+		alert('mobile!');
     }
 });
 	
