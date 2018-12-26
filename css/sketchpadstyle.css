@@ -93,7 +93,7 @@ p {
 
 
 #academics-home{
-	background-image: url(../blogimages/clouds.jpg);
+	background-image: url(../blog/images/clouds.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -330,7 +330,7 @@ Blog post details
 }
 
 #how-to-engage-with-art-header{
-	background-image: url(../blogimages/blackboardbucket.jpg);
+	background-image: url(../blog/images/blackboardbucket.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -341,7 +341,7 @@ Blog post details
 
 
 #on-brotherhood-header{
-	background-image: url(../blogimages/matthew-silly.jpg);
+	background-image: url(../blog/images/matthew-silly.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
