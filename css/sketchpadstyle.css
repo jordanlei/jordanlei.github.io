@@ -123,9 +123,9 @@ p {
 	background-attachment: fixed;
 	height:auto;
 	min-height: 300px;
-	padding-left: 20%; 
-	padding-right: 20%; 
-	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2%;
 }
 
 .section-title {
@@ -173,6 +173,26 @@ p {
 /*
 Blog post details
 */
+
+.blog-home-title{
+	color:rgba(0, 0, 0, 0.5);
+}
+
+
+#blog-home{
+	background-image: url(../blog/images/clouds.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#blog-home h1{
+	font-size: 80px;
+	font-weight: 700;
+	text-transform:uppercase;
+}
+
 
 .header-content-blog{
 	min-height: 800px;
