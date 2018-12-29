@@ -1,6 +1,6 @@
 
 //check to see if the media is mobile
-var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+var isMobile = window.matchMedia("only screen and (max-width: 1000px)");
 
 
 $( document ).ready(function() {      

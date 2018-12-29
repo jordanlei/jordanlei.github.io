@@ -59,8 +59,9 @@
         </div>
 
         <!-- header content mobile only -->
-        <div class="header-content removed mobile-only" align= "center">
-            <div class="header-container img-responsive scroll-fadein" style= "padding-top: 450px; padding-bottom: 15%">
+        <div class="header-content removed mobile-only" align= "center" 
+        id= "header-mobile">
+        <div class="header-container img-responsive scroll-fadein" style= "padding-top: 450px; padding-bottom: 15%">
                 <h1> Hey there! I'm Jordan.</h1>
                 <h2> <i>It's nice to meet you!</i></h2>
             </div>
@@ -300,25 +301,27 @@
 
     <!-- art section -->
     <section class= "blog-post-dark" id = "art-section">
-        <div id= "art-banner">
-            <div class= "col-xs-6 desktop-only" style= "padding-left: 10%; padding-top: 30px; background-color: rgba(0, 0, 0, 0.7)">
-            <article class="desktop-only">
-                <div class="content-container col-xs-6 img-responsive scroll-fadein" style= "word-wrap: break-word">
-                    <h2 class="section-title">Join Me on an Art Adventure.</h2>
-                    <br>
-                    <a href="art.html" target="_blank"><p class="btn btn-xl">View My Portfolio</p></a>     
+        <div class= "desktop-only"> 
+            <div id= "art-banner">
+                <div class= "col-xs-6" style= "padding-left: 10%; padding-top: 30px; background-color: rgba(0, 0, 0, 0.7)">
+                <article>
+                    <div class="content-container col-xs-6 img-responsive scroll-fadein" style= "word-wrap: break-word">
+                        <h2 class="section-title">Join Me on an Art Adventure.</h2>
+                        <br>
+                        <a href="art.html" target="_blank"><p class="btn btn-xl">View My Portfolio</p></a>     
+                    </div>
+                    <div class="content-container col-xs-6 img-responsive scroll-fadeinup">
+                        <p class="section-text" style= "text-align: left;; padding-left: 3%">
+                            <em>Art is everywhere.</em>
+                            I've been drawing for as long as I can remember. Art has a special way of 
+                            making people stop, observe, and admire their surroundings. 
+                            As an artist, I've been lucky enough to work with all different kinds of media, 
+                            including traditional (oil, acrylic, colored pencil, sketch), and digital forms. 
+                            Interested in seeing more of my work? Awesome - let's take a walk, shall we?
+                        </p>    
+                    </div>	
+                </article>
                 </div>
-                <div class="content-container col-xs-6 img-responsive scroll-fadeinup">
-                    <p class="section-text" style= "text-align: left;; padding-left: 3%">
-                        <em>Art is everywhere.</em>
-                        I've been drawing for as long as I can remember. Art has a special way of 
-                        making people stop, observe, and admire their surroundings. 
-                        As an artist, I've been lucky enough to work with all different kinds of media, 
-                        including traditional (oil, acrylic, colored pencil, sketch), and digital forms. 
-                        Interested in seeing more of my work? Awesome - let's take a walk, shall we?
-                    </p>    
-                </div>	
-            </article>
             </div>
         </div>
 
@@ -370,7 +373,6 @@
             <div class="content-container img-responsive scroll-fadein" style= "word-wrap: break-word">
                 <h2 class="section-title"> Oh, Geez. Another Blog.</h2> 
                 <br>
-                <a href="sketchpad.html" target="_blank"><p class="btn btn-xl">View My Blog</p></a>              
                 <p class="section-text">
                     I know what you're thinking. <i>Wow, so original, yet another blog.</i>
                     Which, hey, is totally fair. But if you are as curious about the world
@@ -383,6 +385,7 @@
                     and who knows, <em>maybe you'll find something interesting in there.</em> <br>
                     No promises, though. 
                 </p>    
+                <a href="sketchpad.html" target="_blank"><p class="btn btn-xl">View My Blog</p></a>              
             </div>	
             </article>
     </section>

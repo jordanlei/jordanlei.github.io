@@ -23,6 +23,11 @@ body{
 	min-height: 800px;
 }
 
+#header-mobile {
+	background-image: url(../images/jordanlei3-mobile.png);
+        background-attachment: scroll;
+}
+
 .header-content h1 {
 	color: rgba(255, 255, 255, 0.7);
 	font-family:'Abril Fatface', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
