@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.6, minimum-scale= 0.6">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/artstyle.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/artscript.js"></script>
+    </head>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/tether.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  </head>
+<title>Art</title>
 
-<title>Jordan Lei</title>
 <body>
   <nav class="navbar navbar-fixed-top navbar-dark">
     <a class="navbar-brand" href="index.html#home">Jordan Lei</a>
@@ -49,16 +57,48 @@
   </div>
   </div>
 
-  <div class="header-content-art" id= "art-home">
-      <div class="header-content-inner">
-              <h1>Welcome to the studio</h1>
-
-              <a href="#artwork" class="btn btn-outline-secondary btn-xl page-scroll">Find out more</a>
+  <!-- header content -->
+  <section id= "home"> 
+      <div class="header-content desktop-only">
+          <div class="header-container col-xs-8 img-responsive">	  
+          </div>
+          <div class="header-container col-xs-3 img-responsive scroll-fadein" style= "padding-top: 10%; padding-right: 10%">
+            <h1>Let's Get Artsy.</h1>
+            <br>
+            <img src= "blog/images/sig2.png" align= "left" style= "height: 150px">
+          </div>
       </div>
-  </div>
+
+      <!-- header content mobile only -->
+      <div class="header-content removed mobile-only" align= "center" 
+      id= "header-mobile">
+      <div class="header-container img-responsive scroll-fadein" style= "padding-top: 450px; padding-bottom: 15%">
+              <h1> Hey there! I'm Jordan.</h1>
+              <h2> <i>It's nice to meet you!</i></h2>
+          </div>
+      </div>
+  </section>
 
 
 
+
+<h2>Animated Accordion</h2>
+<p>Click on the buttons to open the collapsible content.</p>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
 
   <section id="artwork">
@@ -758,4 +798,22 @@ $('body').scrollspy({ target: '#left-nav', offset: 55})
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
 </html>
