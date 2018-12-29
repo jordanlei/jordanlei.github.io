@@ -27,25 +27,29 @@ body{
 }
 
 .header-content {
- background-image: url(../images/jordanlei.JPG);
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- min-height: 800px;
+	background-image: url(../blog/images/sketch.JPG);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 800px;
+}
+
+#header-mobile {
+	background-image: url(../blog/images/sketch.JPG);
+	background-attachment: scroll;
+	height: 900px;
 }
 
 .header-content h1 {
-    color: rgba(255, 255, 255, 0.7);
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 80px
+	font-family:'Abril Fatface', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 80px;
 }
 
 
 .header-content h2 {
-  color: rgba(255, 255, 255, 0.4);
-	font-weight: 400;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 40px;
 }
 
 .header-content a.btn {
