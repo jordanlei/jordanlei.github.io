@@ -1,0 +1,699 @@
+body{
+	position:relative;
+}
+
+
+
+
+.navbar{
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+}
+
+.navbar-brand{
+	font-size: 25px;
+}
+
+.header-content {
+	background-image: url(../images/jordanlei.JPG);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 800px;
+}
+
+.header-content h1 {
+	color: rgba(255, 255, 255, 0.7);
+	font-family:'Abril Fatface', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 80px;
+}
+
+
+.header-content h2 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 40px;
+}
+
+
+.header-container{
+	height:auto;
+	min-height: 600px;
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.header-content a.btn {
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.5);
+	outline-color: none;
+}
+
+
+p {
+	font-size: 20px;
+}
+
+
+.blog-post-light{
+	background-color:rgba(109,128,141,0.2);
+	color: rgba(0,0,0,0.7);
+}
+.blog-post-light a{
+	color: rgba(0,0,0,0.7);
+}
+
+
+.blog-post-dark{
+	background-color:rgba(11,10,8,0.95);
+	color: rgba(255,255,255,0.7);
+}
+.blog-post-dark a{
+	color: rgba(255,255,255,0.7);
+}
+
+.blog-post {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	display:flex;
+}
+
+.blog-post hr{
+	border-width: medium;
+}
+
+
+.blog-post a:hover{
+	color: rgba(0,0,0,0.5);
+	text-decoration: none;
+}
+
+.blog-post-light p.btn{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.blog-post-dark p.btn{
+	background-color: rgba(255, 255, 255, 0.7);
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.blog-post-dark em{
+	color: rgba(230, 235, 240, 1.0);
+	font-style: normal;
+	font-weight: 500;
+}
+
+.blog-post-light em{
+	color: rgba(20, 15, 10, 1.0);
+	font-style: normal;
+	font-weight: 500;
+}
+
+.content-container {
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	height:auto;
+	min-height: 300px;
+}
+
+.section-title {
+	font-family:'Abril Fatface', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 45px;
+	font-weight: 500;
+}
+
+.section-text {
+	font-size: 20px;
+}
+
+.section-subtext{
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 20px;
+}
+
+.section-button {
+	text-align: center;
+}
+
+#art-banner{
+	background-image: url(../images/city-lovers.JPG);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+	display: flex;
+}
+
+/* line breaks */
+
+hr.light {
+    border-color: #fff;
+}
+
+hr {
+    max-width: 100px;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.portfolio-image {
+	  width: 200px;
+    height: 200px;
+}
+
+
+
+.carousel {
+	max-height: 500px;
+}
+
+.carousel-image {
+  max-height:500px;
+	min-height:500px;
+
+
+}
+
+#footer p{
+	font-size:15px;
+}
+
+#footer{
+  background-color: rgba(0, 0, 0, 1.0);
+	color:rgba(170,165,165,0.7);
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+
+
+
+/* art page */
+.header-content-art{
+	background-image: url(../images/055.gif);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+}
+
+
+.header-content-art h1 {
+  color: rgba(255, 255, 255, 0.8);
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 65px;
+}
+
+
+
+/* art page */
+#left-nav{
+ padding-left: 3%;
+ color: black;
+ min-height: 60%;
+ font-size: 20px;
+}
+
+
+#left-nav a.nav-link{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#left-nav a.nav-link.active{
+	color: rgba(0, 0, 0, 0.9);
+}
+
+
+#gallery{
+	padding-left:18%;
+	padding-right:18%;
+	padding-top: 0px;
+}
+
+#gallery div.container{
+	padding-bottom:100px;
+}
+
+
+.gallery-container{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	padding:0px;
+}
+
+#realism h4{
+	font-size: 14px;
+}
+
+#gallery-byte-me{
+	background-image: url(../images/byte-me.jpg);
+}
+
+#gallery-freefall{
+	background-image: url(../images/freefall.jpg);
+}
+
+#gallery-hackerman{
+	background-image: url(../images/hackerman.jpg);
+}
+
+#gallery-deserted{
+	background-image: url(../images/deserted.jpg)
+}
+
+#gallery-allegory-of-cave{
+	background-image: url(../images/allegory-of-cave.jpg)
+}
+
+#gallery-eclipse{
+	background-image: url(../images/eclipse.jpg)
+}
+
+#gallery-kingslanding{
+	background-image: url(../images/kingslanding.jpg)
+}
+
+#gallery-elephant-temple{
+	background-image: url(../images/elephant-temple.jpg)
+}
+
+#gallery-elements{
+	background-image: url(../images/elements.jpg)
+}
+
+#gallery-thwaites{
+	background-image: url(../images/thwaites.jpg)
+}
+
+#gallery-man-digital2{
+	background-image: url(../images/man-digital2.jpg)
+}
+
+#gallery-chris-evans{
+	background-image: url(../images/chris-evans.jpg)
+}
+
+#gallery-man-digital{
+	background-image: url(../images/man-digital.jpg)
+}
+
+#gallery-landscape-digital{
+	background-image: url(../images/landscape-digital.jpg)
+}
+
+#gallery-woman-digital{
+	background-image: url(../images/woman-digital.jpg)
+}
+
+#gallery-jordan-portrait{
+	background-image: url(../images/jordan-portrait.jpg);
+}
+
+#gallery-self-portrait{
+	background-image: url(../images/self-portrait.jpg);
+}
+
+#gallery-rose{
+	background-image: url(../images/rose.jpg);
+}
+
+#gallery-portrait-man{
+	background-image: url(../images/portrait-man.jpg);
+}
+
+#gallery-portrait-girl{
+	background-image: url(../images/portrait-girl.jpg);
+}
+
+#gallery-portrait-girl-2{
+	background-image: url(../images/portrait-girl-2.jpg);
+}
+
+#gallery-portrait-man-2{
+	background-image: url(../images/portrait-man-2.jpg);
+}
+
+#gallery-sentinel{
+	background-image: url(../images/sentinel.jpg);
+}
+
+#gallery-mallards{
+	background-image: url(../images/mallards.jpg);
+}
+
+#gallery-cubist-roses{
+	background-image: url(../images/cubist-roses.jpg);
+}
+
+#gallery-abstract-roses{
+	background-image: url(../images/abstract-roses.jpg);
+}
+
+#gallery-still-life{
+	background-image: url(../images/still-life.jpg);
+}
+
+#gallery-guilin{
+	background-image: url(../images/guilin.jpg);
+}
+
+#gallery-new-york{
+	background-image: url(../images/new-york.jpg);
+}
+
+#gallery-portland{
+	background-image: url(../images/portland-1.jpg);
+}
+
+#gallery-chicago{
+	background-image: url(../images/chicago.jpg);
+}
+
+#gallery-hourglass-woman{
+	background-image: url(../images/hourglass-woman.jpg);
+}
+
+#gallery-hourglass-city{
+	background-image: url(../images/hourglass-city.jpg);
+}
+#gallery-time-cathedral{
+	background-image: url(../images/time-cathedral.jpg);
+}
+
+#gallery-born{
+	background-image: url(../images/born.jpg);
+}
+
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect h2 {
+font-size: 17px;
+color:#fff;
+text-align:center;
+position:relative;
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
+margin:0px;
+}
+
+
+.hovereffect h3{
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:80px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* academics */
+#academic-left-nav{
+ padding-left: 3%;
+ color: black;
+ min-height: 60%;
+ font-size: 20px;
+}
+
+#academic-left-nav a.nav-link{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#academic-left-nav a.nav-link.active{
+	color: rgba(255, 255, 255, 0.9);
+}
+
+
+#academics-home{
+	background-image: url(../images/academics/graduation.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#portfolio-speech{
+	background-image: url(../images/academics/speech.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#portfolio-science{
+	background-image: url(../images/academics/science.JPG);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#portfolio-swimming{
+	background-image: url(../images/academics/swimming.JPG);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+#about-home {
+	background-image: url(../images/byte-me.jpg);
+	color: white;
+}
+
+
+.section-text {
+	text-align:justify;
+}
+#about-content {
+	background-color:#EAF3FA;
+	color:#33373A;
+}
+
+.section-button {
+	text-align: center;
+}
+
+#about-section {
+	padding: 0;
+}
+
+
+
+#edu-section {
+	padding: 0;
+}
+
+
+#edu-content {
+	background-color:rgba(109,128,141,0.89);
+	background-image: -webkit-linear-gradient(top left, rgba(5,5,4,1.00) 30%, rgba(30,40,40,0.89) 100%);
+	background-image: -o-linear-gradient(top left, rgba(5,5,4,1.00) 30%, rgba(30,40,40,0.89) 100%);
+	background-image: linear-gradient(to bottom, rgba(5,5,4,1.00) 50%, rgba(30,40,40, 0.89) 100%);
+	color:#B5BFC6;
+}
+
+
+
+
+
+
+
+#portfolio-content {
+	background-image: url(../images/city.JPG);
+	background-size: cover;
+	padding:0;
+	color: rgba(234,243,250,0.7);
+}
+
+#portfolio-penn {
+	display: flex;
+	padding:0;
+}
+
+
+.about-section {
+	display:flex;
+}
+
+
+#portfolio-penn-content {
+	background-color: rgba(15,20,20,0.8);
+	padding-left: 6%;
+	padding-right: 5%;
+	padding-bottom: 1%;
+}
+
+
+
+#portfolio-cmu-content {
+	float:right;
+	background-color: rgba(15,20,20,0.8);
+	padding: 5%;
+	padding-bottom: 1%;
+}
+
+#portfolio-ohsu-content {
+	background-color: rgba(15,20,20,0.8);
+	padding: 5%;
+	padding-left: 6%;
+	padding-bottom:1%;
+}
+
+#project-content {
+	background-color:rgba(109,128,141,0.89);
+	background-image: linear-gradient(to bottom, rgba(5,5,4,1.00) 50%, rgba(30,40,40,0.89) 100%);
+	color:#B5BFC6;
+}
+
+
+
+
+
+#artwork-content {
+	background-color: aliceblue;
+	background-image: url(../images/city-lovers.JPG);
+	background-size: cover;
+	padding:0;
+}
+
+#artwork-penn {
+	padding:0;
+}
+
+#artwork-penn-content {
+	padding:5%;
+	padding-top:0;
+	padding-left:6%;
+	background-color: rgba(15,20,20,0.7);
+	color: rgba(234,243,250,0.7);
+}
+
+
+#art-is-everywhere {
+	padding: 10;
+}
+
+#contact-content {
+	color:rgba(220,230,230,0.7);
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.footer-social {
+	display: block;
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
+}
+.social-default {
+	padding-left:5%;
+	padding-right: 5%;
+}
+
+/* hidden and removed definition */
+.hidden{
+	visibility: hidden;
+}
+
+.removed{
+	display: none;
+}
