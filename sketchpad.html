@@ -14,14 +14,20 @@
   <script src="js/blogscript.js"></script>
   </head>
 
-<body>
-  <nav class="navbar navbar-fixed-top navbar-dark">
-    <a class="navbar-brand" href="sketchpad.html#home">Sketchpad</a>
+<body data-spy="scroll" data-target="#top-nav">
+  <nav class="navbar navbar-fixed-top navbar-dark" id= "#top-nav">
+    <a class="navbar-brand js-scroll-trigger" href="sketchpad.html#home">Sketchpad</a>
 
     <ul class="nav navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html#home"> Back <span class="sr-only">(current)</span></a>
-      </li>
+		<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="sketchpad.html#featured"> Featured <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="sketchpad.html#posts"> Posts <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#home"> Homepage <span class="sr-only">(current)</span></a>
+		</li>
     </ul>
 
   </nav>
@@ -51,7 +57,7 @@
 	</section>
 
 
-<section class= "blog-post-dark">
+<section class= "blog-post-dark" id= "featured">
 	<article class="blog-post desktop-only">
     <div class="content-container col-xs-6 img-responsive" style="background-image: url(blog/images/blackboardbucket.jpg); background-size: 70% 100%; background-position:left;">
     </div>
@@ -86,7 +92,9 @@
 	
 </section>
 	
-	
+
+<div id= "posts"></div>
+
 <section class= "blog-post-light">
 	<article class="blog-post desktop-only">
     <div class="content-container col-xs-6 img-responsive" style="background-image: url(blog/images/starry-night-van-gogh.jpg); background-size: 70% 100%;">	  
@@ -182,35 +190,23 @@
   </section>
 
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+	</body>
+	<script>
+		$('body').scrollspy({
+		target: '#mainNav',
+		offset: 55
+	});
+	</script>
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
 
-</body>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
 
+	<!-- Scrolling Nav JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/scrolling-nav.js"></script>
 
-<script>
-$(document).ready(function(){
-   $('li img').on('click',function(){
-        var src = $(this).attr('src');
-        var img = '<img src="' + "images/background1.jpg"+ '" class="img-responsive"/>';
-        $('#myModal').modal();
-        $('#myModal').on('shown.bs.modal', function(){
-            $('#myModal .modal-body').html(img);
-        });
-        $('#myModal').on('hidden.bs.modal', function(){
-            $('#myModal .modal-body').html('');
-        });
-   });
-})
-
-$('body').scrollspy({ target: '#academic-left-nav'})
-</script>
 
 
 </html>
