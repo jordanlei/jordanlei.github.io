@@ -21,7 +21,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     position:relative;
-    padding-top: 300px;
+    padding-top: 250px;
     padding-bottom: 10%;
 
 }
@@ -174,12 +174,12 @@ Blog post details
 */
 
 .blog-home-title{
-	color:rgba(0, 0, 0, 0.5);
+	color:rgba(255, 255, 255, 0.8);
 }
 
 
 #blog-home{
-	background-image: url(../blog/images/clouds.jpg);
+	background-image: url(../blog/images/sketch.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
