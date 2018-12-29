@@ -32,7 +32,7 @@ body{
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- min-height: 500px;
+ min-height: 800px;
 }
 
 .header-content h1 {
@@ -179,7 +179,7 @@ Blog post details
 
 
 #blog-home{
-	background-image: url(../blog/images/sketch.jpg);
+	background-image: url(../blog/images/sketch.JPG);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -193,9 +193,7 @@ Blog post details
 }
 
 
-.header-content-blog{
-	min-height: 800px;
-}
+
 
 
 .blog-title{
