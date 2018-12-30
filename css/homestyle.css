@@ -15,7 +15,7 @@ body{
 }
 
 .header-content {
-	background-image: url(../images/jordanlei3-min.png);
+	background-image: url(../images/jordanlei3.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body{
 }
 
 #header-mobile {
-	background-image: url(../images/jordanlei3-mobile.png);
+	background-image: url(../images/jordanlei3-mobile.jpg);
     background-attachment: scroll;
 }
 
