@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.6, minimum-scale= 0.6">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/sketchpadstyle.css"/>
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/blogscript.js"></script>
+ </head>
+
+<body>
+  <nav class="navbar navbar-fixed-top navbar-dark">
+    <a class="navbar-brand" href="index.html#home">Jordan Lei</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="sketchpad.html"> Let's Go Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="header-content removed mobile-only" style= "overflow: hidden;">
+	  <img src= "blog/project_images/keyboard.jpg" style= "min-width: 100%; height: 800px; position: absolute; margin:auto; float:left; word-wrap: break-word" alt= "placeholder">
+	  <div class="content-container col-xs-6 img-responsive blog-title">
+		  <h1 class= "scroll-fadein-alw">Correcting Autocorrect</h1>
+	  </div>
+	  <div class="content-container col-xs-6 img-responsive blog-title">
+		  <h2 class= "scroll-fadein-alw">In Pursuit of a Context-Based Word Processor</h2><br>
+			<h3 class= "scroll-fadein-alw"><i> Written by Jordan Lei and Daniel Stekol
+			</i></h3>
+			<h3 class= "scroll-fadein-alw"><i> Posted on 04.28.2019
+			</i></h3>
+	  </div>
+  </div>	
+
+
+  <div class="header-content desktop-only" id= "correcting-autocorrect-header">
+	  <div class="content-container col-xs-6 img-responsive blog-title" id= "how-to-engage-with-art-title1">
+		  <h1 class= "scroll-fadein-alw">Correcting Autocorrect</h1>
+	  </div>
+	  <div class="content-container col-xs-6 img-responsive blog-title">
+		  <h2 class= "scroll-fadein-alw">In Pursuit of a Context-Based Word Processor</h2><br>
+			<h3 class= "scroll-fadein-alw"><i> Written by Jordan Lei and Daniel Stekol
+			</i></h3>
+			<h3 class= "scroll-fadein-alw"><i> Posted on 04.28.2019
+			</i></h3>
+	  </div>
+  </div>
+
+	
+<section style="padding:0">
+    <div class="content-container img-responsive section-dark blog-section" style= "padding:0">
+		<div class="content-container img-responsive" style= "padding-left:20%; padding-right:20%; padding-top: 5%">
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden" style= "padding-left: 2%; padding-right: 2%; min-height:0; word-wrap: break-word">
+				<h1>Autocorrect Sucks.</h1>
+			</div>
+			<p class= "scroll-fadeinup-once hidden">
+				Essentially every modern device capable of typing includes some form of error correction - Microsoft Word underlines grammatical errors, and smartphones often shamelessly substitute the word you typed for the word they think you meant, leading to the widely-known Cupertino Effect (known in the NLP community as “damn you, autocorrect!”). Many such systems rely on metrics such as edit-distance, or perhaps even account for keyboard layout, but few of them are actually sensitive to the content of the entire sentence.
+			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+				For instance, consider the following sentence: 			
+			</p><br>
+			<div class="content-container col-xs-12 img-responsive scroll-fadein hidden" style= "min-height:0; word-wrap: break-word;  padding-left: 0; padding-right: 0; padding-bottom: 20px; text-align: center">
+				<hr>
+				<h2 style= "font-weight: 100; padding-left: 5%; padding-right: 5%">
+					"After obtaining my diploma, I plan on pursuing graduate students in Computer Science." 
+				</h2>
+				<hr>
+			</div>
+			<p class= "scroll-fadeinup-once hidden">
+				A human reading this sentence would stop, spit out their drink, peruse the sentence a second time, and most likely conclude that the writer meant "graduate students", not that they would take up stalking as a hobby. A word processor, however, would almost certainly fail to flag this as an error, since the bigram "graduate students" is quite common, and only the presence of "pursue" suggests that "students" might be the wrong choice. Note that the word "students" is quite lexically similar to "studies", and it is therefore conceivable that a small spelling mistake could lead to an auto-correction that results in this unfortunate phrase.
+			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+					The goal of this project, therefore, is to create a model that can detect such abnormalities in sentences, even when the substituted word is reasonably similar to the original word. To this end, we have created a dataset by perturbing an existing corpus, trained both traditional and neural machine learning models, and evaluated their performance and relative advantages. Ultimately, we have found that although this identification task is quite difficult to learn for all the models, deep-learning models are able to both significantly improve over random performance, and also substantially outperform the traditional machine learning algorithms examined.			
+			</p><br>
+      </div>
+    </div>
+</section>
+
+<section style="padding:0">
+    <div class="content-container img-responsive section-light blog-section" style= "padding:0; word-wrap: break-word">
+		<div class="content-container img-responsive" style= "padding-left:20%; padding-right:20%; padding-top: 5%">
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden" style= "padding-left: 0%; padding-right: 2%; min-height:0; word-wrap: break-word;">
+				<h1>The Dataset.</h1>
+			</div>
+			<p class= "scroll-fadeinup-once hidden">
+				We took an existing collection of sentences and corrupted them, by inserting words that didn’t belong in a given sentence with words that were 3 edits away (for example, “through” and “rouge”). In one version, we created a dataset where replacement words were the same part-of-speech as the word they were replacing (the so-called filtered dataset); in another, any word could be replaced by any other, so long as they were the appropriate edit distance away (the unfiltered dataset). 			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+				In each sentence, every word was transformed into a vector representation using PyMagnitude, a library that converts words into word-embeddings of length 300. Thus, each sentence was represented by a list of length-300 vectors.
+			</p><br>
+        </div>
+    </div>
+</section>
+
+	
+<section style="padding:0">
+    <div class="content-container img-responsive section-dark blog-section" style= "padding:0; word-wrap: break-word">
+		<div class="content-container img-responsive" style= "padding-left:20%; padding-right:20%; padding-top: 5%">
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden" style= "padding-left: 0%; padding-right: 2%; min-height:0; word-wrap: break-word;">
+				<h1>The Models.</h1>
+			</div>
+			<p class= "scroll-fadeinup-once hidden">
+					The goal of each of our models is to take a sentence (a list of word embeddings) and have it output a 1 for each word that belongs, and a 0 for each word that doesn’t.
+					A sentence is only considered correct if each word within that sentence is correctly labeled as 0 or 1. 
+			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+					We wanted a model to compare our performance to, so we chose a baseline model that would be a good benchmark for what we were getting ourselves into. The simplest way to test the difficulty of this dataset would be to take each sentence and average the word-vectors, then concatenate this vector with the existing word embedding. Using this new vector, we fed the data through a <b>logistic regression</b> to see if it could learn when a word did not belong.			
+			</p><br>
+			
+			<p class= "scroll-fadeinup-once hidden">
+					Eagle-eyed readers will recognize that this model has significant drawbacks. The most significant drawback is that by collapsing the entire sentence into a single vector, we lose all sequential information, which is necessary to determine whether a word belongs in a given context. In the example we described before with the graduate students vs. studies, we relied on the fact that pursue came before graduate students to recognize something was amiss. Clearly, we needed a model that was capable of recognizing the importance of sequential ordering in sentences and was able to remember relevant details. Cue the <b>LSTM.</b> 			
+			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+					Our LSTM models (vanilla and bi-directional) helped fulfill our need for a model that could handle both word-embeddings and the sequential ordering of words. LSTMs work well when inputs have both long and short-term patterns. Our <b>bidirectional LSTM</b> also had the added benefit of capturing relationships that occured after the words in question.  In our example “... pursuing graduate [students/studies] in computer science”,  the phrase “in computer science” (which comes after the erroneous word) may be of use in determining whether or not a given word belongs.
+			</p><br>
+        </div>
+    </div>
+</section>
+	
+<section style="padding:0">
+    <div class="content-container img-responsive section-light blog-section" style= "padding:0; word-wrap: break-word">
+		<div class="content-container img-responsive" style= "padding-left:20%; padding-right:20%; padding-top: 5%">
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden" style= "padding-left: 0%; padding-right: 2%; min-height:0; word-wrap: break-word;">
+				<h1>Conclusion.</h1>
+			</div>
+			
+			
+			
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden desktop-only" style= "padding-left: 5%; padding-right: 2%; min-height: 0; float:right;">
+				<img class= "scroll-fadeinup-once hidden" src= "blog/project_images/base_filt_weighted.png" style= "width: 100%; padding-bottom: 20px">
+
+				<h3><i>Figure 1.</i> Logistic Regression performance on varying-length sentences, using Weighted Cross Entropy.</h3>
+			</div>
+			<p class= "scroll-fadeinup-once hidden">
+					Our baseline model was used as a measure of how difficult the dataset was to learn. When fully trained, the logistic regression got to about 8% accuracy. Not bad, but not great either. We found that instead of learning accurately, it was just predicting that everything was correct! This indicated three things: (1) logistic regression is not a sufficiently powerful tool to perform this task, (2) this task is pretty difficult, and (3) perhaps we should rethink our loss function to prevent the classifier from always predicting 1.			
+			</p><br>
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden desktop-only" style= "padding-left: 5%; padding-right: 2%; min-height: 0; float:left;">
+					<img class= "scroll-fadeinup-once hidden" src= "blog/project_images/LSTM_filt.png" style= "width: 100%; padding-bottom: 20px">
+					<img class= "scroll-fadeinup-once hidden" src= "blog/project_images/LSTM_filt_weighted.png" style= "width: 100%; padding-bottom: 20px">
+	
+					<h3><i>Figure 2.</i> LSTM performance on varying-length sentences, using Unweighted(top) and Weighted(bottom) Cross Entropy.</h3>
+			</div>
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden desktop-only" style= "padding-left: 5%; padding-right: 2%; min-height: 0; float:right;">
+					<img class= "scroll-fadeinup-once hidden" src= "blog/project_images/biLSTM_filt.png" style= "width: 100%; padding-bottom: 20px">
+					<img class= "scroll-fadeinup-once hidden" src= "blog/project_images/biLSTM_filt_weighted.png" style= "width: 100%; padding-bottom: 20px">
+	
+					<h3><i>Figure 3.</i> bi-LSTM performance on varying-length sentences, using Unweighted(top) and Weighted(bottom) Cross Entropy.</h3>
+			</div>
+			<p class= "scroll-fadeinup-once hidden">
+					Our vanilla LSTM performed much better, achieving about 18% on the filtered dataset. As a response to observation (3), we re-trained our model on a weighted cross-entropy loss function rather than a simple binary cross-entropy. After training the LSTM on the augmented dataset and weighted loss, we found that the accuracy improved to 22%. We had similar findings for our bidirectional LSTM, which had accuracy of 24% and later 29% with the weighted loss function. 			
+			</p><br>
+			<div class="content-container col-xs-6 img-responsive scroll-fadeinup-once hidden desktop-only" style= "padding-left: 5%; padding-right: 2%; min-height: 0; float:right;">
+					<img class= "scroll-fadeinup-once hidden" src= "blog/project_images/filtered_results_graph.png" style= "width: 100%; padding-bottom: 20px">
+					<img class= "scroll-fadeinup-once hidden" src= "blog/project_images/unfiltered_results_graph.png" style= "width: 100%; padding-bottom: 20px">
+	
+					<h3><i>Figure 3.</i> Model performance on filtered (top) and unfiltered (bottom) datasets.</h3>
+			</div>
+			<p class= "scroll-fadeinup-once hidden">
+					We found that in all models, the accuracy was much better on the dataset filtered by part-of-speech than the unfiltered dataset. While this may seem counterintuitive (it should be easier to identify a word that is out of context by its part of speech alone in the unfiltered dataset), it could be the case that corrupting a word in an unfiltered sense makes the entire sentence nonsensical, making it hard to identify which word is the culprit.			
+			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+					We also found that in many cases, the models had low confidence across the board. When using “best-guess accuracy”, where we had the model pick the “most wrong” word in a sentence even if it didn’t designate a score below 0.5, we found that the models significantly improved. This indicates that our models were able to pinpoint words that were less likely to belong, but did not have the confidence threshold to flag them as erroneous. 
+			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+					Across the board, we found, unsurprisingly, that sentences with longer length tended to pose a challenge to all three models. This makes sense, because in a longer sentence it’s much harder to pinpoint whether any given word is off.
+			</p><br>
+			<p class= "scroll-fadeinup-once hidden">
+					Although none of the models achieved a level that would be considered industry-standard, the most promising results were achieved with the use of a bi-LSTM. This work presents a good stepping stone into other possible implementations of context-based analysis in sequential data, including text in other languages, or even perhaps in music. This is just the beginning of the applications of context-based tagging, and we are excited to see where Deep Learning can push the limits on context-based auto-correcting algorithms.
+			</p><br>
+		
+		
+        </div>
+    </div>
+</section>
+	
+
+
+  <section id= "footer">
+      <div class="container">
+          <div class="row">
+              <div class="text-xs-center">
+                  <p>
+                    Copyright &copy Jordan Lei 2017
+                  </p>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+
+
+</body>
+
+
+<script>
+
+</script>
+
+
+</html>

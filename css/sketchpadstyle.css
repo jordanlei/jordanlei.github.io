@@ -318,6 +318,17 @@ Blog post details
 
 }
 
+#correcting-autocorrect-header{
+	background-image: url(../blog/project_images/keyboard.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: none;
+
+}
+
+
 .hidden{
 	visibility: hidden;
 }
