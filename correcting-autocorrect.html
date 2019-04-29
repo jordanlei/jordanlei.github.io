@@ -89,7 +89,7 @@
 				<h1>The Dataset.</h1>
 			</div>
 			<p class= "scroll-fadeinup-once hidden">
-				We took an existing collection of sentences and corrupted them, by inserting words that didn’t belong in a given sentence with words that were 3 edits away (for example, “through” and “rouge”). In one version, we created a dataset where replacement words were the same part-of-speech as the word they were replacing (the so-called filtered dataset); in another, any word could be replaced by any other, so long as they were the appropriate edit distance away (the unfiltered dataset). 			</p><br>
+				We took an existing collection of sentences (from the Brown Corpus) and corrupted them, by inserting words that didn’t belong in a given sentence with words that were 3 edits away (for example, “through” and “rouge”). In one version, we created a dataset where replacement words were the same part-of-speech as the word they were replacing (the so-called filtered dataset); in another, any word could be replaced by any other, so long as they were the appropriate edit distance away (the unfiltered dataset). 			</p><br>
 			<p class= "scroll-fadeinup-once hidden">
 				In each sentence, every word was transformed into a vector representation using PyMagnitude, a library that converts words into word-embeddings of length 300. Thus, each sentence was represented by a list of length-300 vectors.
 			</p><br>
